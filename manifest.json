@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Prompt Helper",
+  "version": "1.0",
+
+  "description": "Prompt writing assistant for ChatGPT and Gemini",
+
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chatgpt.com/*",
+        "https://*.chatgpt.com/*",
+        "https://gemini.google.com/*"
+      ],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+
+  "permissions": [
+    "activeTab"
+  ]
+}
